@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: vaa2lb0qh-python-gitops
+  description: This is GitOps manifest for vaa2lb0qh-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: vaa2lb0qh-python
+    backstage.io/kubernetes-id: vaa2lb0qh-python 
+    backstage.io/techdocs-ref: dir:. 
+    jenkins.io/job-full-name: vaa2lb0qh-python-gitops   
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:vaa2lb0qh-python

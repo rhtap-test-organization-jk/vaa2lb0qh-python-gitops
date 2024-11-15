@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: vaa2lb0qh-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-test-organization-jk/vaa2lb0qh-python-gitops
